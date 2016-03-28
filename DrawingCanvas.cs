@@ -116,10 +116,6 @@ namespace AffdexMe
                         {
                             value = (float)info.GetValue(face.Emotions, null);
                         }
-                        else if ((info = face.Emotions.GetType().GetProperty(NameMappings(metric))) != null)
-                        {
-                            value = (float)info.GetValue(face.Emojis, null);
-                        }
 
                         SolidColorBrush metricBrush = value > 0 ? pozMetricBrush : negMetricBrush;
                         value = Math.Abs(value);
