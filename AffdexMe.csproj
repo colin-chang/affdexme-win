@@ -47,8 +47,8 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Affdex">
-      <HintPath>..\..\Program Files\Affectiva\Affdex SDK\bin\release\Affdex.dll</HintPath>
+    <Reference Include="Affdex, Version=3.0.0.961, Culture=neutral, processorArchitecture=x64">
+      <HintPath>C:\Program Files\Affectiva\Affdex SDK\bin\release\Affdex.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -203,7 +203,7 @@
     <Resource Include="Resources\valence.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\Program Files\Affectiva\Affdex SDK\bin\release\affdex-native.dll">
+    <Content Include="C:\Program Files\Affectiva\Affdex SDK\bin\release\affdex-native.dll">
       <Link>affdex-native.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
