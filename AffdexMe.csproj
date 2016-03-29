@@ -48,6 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Affdex, Version=3.0.0.961, Culture=neutral, processorArchitecture=x64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Affectiva\Affdex SDK\bin\release\Affdex.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
