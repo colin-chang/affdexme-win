@@ -29,7 +29,7 @@ It runs on Windows 7.0, 8.0, 8.1 and 10
 
 *   Visual Studio 2013
 
-*   To [download and install the Windows SDK (32-bit)](http://developer.affectiva.com/downloads) from Affectiva.
+*   To [download and install the Windows SDK (64-bit)](http://developer.affectiva.com/downloads) from Affectiva.
     
     By default, the Windows SDK is installed to the following location: ```C:\Program Files (x86)\Affectiva\Affdex SDK```
     
