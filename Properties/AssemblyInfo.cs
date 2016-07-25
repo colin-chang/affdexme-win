@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Affectiva Inc.")]
 [assembly: AssemblyProduct("AffdexMe")]
-[assembly: AssemblyCopyright("Copyright © 2015 Affectiva Inc.")]
+[assembly: AssemblyCopyright("Copyright © 2016 Affectiva Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("2.0.*")]
-[assembly: AssemblyVersion("3.0.0.300")]
-[assembly: AssemblyFileVersion("3.0.0.300")]
+[assembly: AssemblyVersion("3.1.0.368")]
+[assembly: AssemblyFileVersion("3.1.0.368")]

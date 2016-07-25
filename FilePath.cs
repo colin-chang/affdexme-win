@@ -5,14 +5,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+  
 namespace AffdexMe
 {
     class FilePath
     {
         static public String GetClassifierDataFolder()
         {
-            return "C:\\Program Files (x86)\\Affectiva\\Affdex SDK\\data";
+            return "C:\\Program Files\\Affectiva\\Affdex SDK\\data";
         }
 
         static public String GetAffdexLicense()
