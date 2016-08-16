@@ -346,9 +346,6 @@ namespace AffdexMe
                 Detector.setImageListener(this);
                 Detector.setProcessStatusListener(this);
 
-                // Set the License Path
-                Detector.setLicenseString(FilePath.GetAffdexLicense());
-
                 Detector.start();
 
                 // Hide the logo, show the camera feed and the data canvas
