@@ -14,11 +14,5 @@ namespace AffdexMe
         {
             return "C:\\Program Files\\Affectiva\\Affdex SDK\\data";
         }
-
-        static public String GetAffdexLicense()
-        {
-            string fileName = "affdex.license";
-            return File.ReadAllText(fileName);
-        }
     }
 }

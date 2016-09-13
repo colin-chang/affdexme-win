@@ -33,18 +33,13 @@ It runs on Windows 7.0, 8.0, 8.1 and 10
 
     By default, the Windows SDK is installed to the following location: ```C:\Program Files\Affectiva\Affdex SDK```
 
-    Modify the ```FilePath.GetClassifierDataFolder``` and ```FilePath.GetAffdexLicense``` in ```FilePath.cs```:
+    Modify the ```FilePath.GetClassifierDataFolder``` in ```FilePath.cs```:
 
     *   **FilePath.GetClassifierDataFolder**
 
         The function should return the full path of the Affdex SDK data folder.
 
         If you installed Affdex SDK in a location other than the default. Please change the return value to match the location of the data folder in your installed location.
-    *   **FilePath.GetAffdexLicense**
-
-        The function reads the license file and returns its contents. You can signup for an evaluation license to use with the app [by filling this form](http://www.affectiva.com/45-day-free-trial/)
-
-        Set ```string fileName``` variable to the location of the your license file
 
 *   Build the project
 
