@@ -12,7 +12,7 @@ namespace AffdexMe
     {
         static public String GetClassifierDataFolder()
         {
-            return "C:\\Program Files\\Affectiva\\Affdex SDK\\data";
+            return "C:\\Program Files\\Affectiva\\AffdexSDK\\data";
         }
     }
 }
