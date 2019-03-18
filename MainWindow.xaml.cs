@@ -8,7 +8,7 @@ using System.Windows.Media.Imaging;
 using System.Reflection;
 using System.Windows.Shapes;
 using System.IO;
-
+using System.Configuration;
 
 namespace AffdexMe
 {
@@ -136,7 +136,7 @@ namespace AffdexMe
         /// <summary>
         /// Handles the end of processing event; not used
         /// </summary>
-        public void onProcessingFinished(){}
+        public void onProcessingFinished() { }
 
 
         /// <summary>
@@ -174,7 +174,7 @@ namespace AffdexMe
                     return imageSrc;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 String message = String.IsNullOrEmpty(ex.Message) ? "AffdexMe error encountered." : ex.Message;
                 ShowExceptionAndShutDown(message);
@@ -204,13 +204,13 @@ namespace AffdexMe
                             canvas.Height = cameraDisplay.ActualHeight;
                             canvas.XScale = canvas.Width / image.getWidth();
                             canvas.YScale = canvas.Height / image.getHeight();
-                            canvas.InvalidateVisual();                            
+                            canvas.InvalidateVisual();
                             DrawSkipCount = 0;
                         }
                     }));
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 String message = String.IsNullOrEmpty(ex.Message) ? "AffdexMe error encountered." : ex.Message;
                 ShowExceptionAndShutDown(message);
@@ -327,11 +327,11 @@ namespace AffdexMe
                 Appearance.IsEnabled =
                 Emojis.IsEnabled =
                 btnStopCamera.IsEnabled =
-                btnAppShot.IsEnabled = 
+                btnAppShot.IsEnabled =
                 btnExit.IsEnabled = true;
 
                 // Instantiate CameraDetector using default camera ID
-                const int cameraId = 0;
+                int cameraId = Convert.ToInt32(ConfigurationManager.AppSettings["CameraId"]);
                 const int numberOfFaces = 10;
                 const int cameraFPS = 15;
                 const int processFPS = 15;
@@ -413,7 +413,7 @@ namespace AffdexMe
                 // Enable/Disable buttons on start
                 btnStartCamera.IsEnabled = true;
                 btnResetCamera.IsEnabled =
-                btnAppShot.IsEnabled = 
+                btnAppShot.IsEnabled =
                 btnStopCamera.IsEnabled = false;
 
             }
@@ -511,7 +511,7 @@ namespace AffdexMe
         {
             ShowMetrics = !ShowMetrics;
             canvas.DrawMetrics = ShowMetrics;
-            changeButtonStyle((Button) sender, ShowMetrics);
+            changeButtonStyle((Button)sender, ShowMetrics);
         }
 
         /// <summary>
@@ -626,7 +626,7 @@ namespace AffdexMe
                 ResetDisplayArea();
                 wasRunning = true;
             }
-            
+
             MetricSelectionUI w = new MetricSelectionUI(EnabledClassifiers);
             w.ShowDialog();
             EnabledClassifiers = new StringCollection();
